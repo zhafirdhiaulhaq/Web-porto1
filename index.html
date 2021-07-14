@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Porto</a>
+            <div class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="moon"><i class='bx bxs-moon' ></i></li>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Hi, I'am Zhafir</h2>
+                <span class="front">Front End Developer</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam amet eius unde iste tempora eos, quibusdam eveniet repudiandae perspiciatis.</p>
+                <a href="#">Contact Me <span><i class='bx bx-paper-plane'></i></span></a>
+            </div>
+            <div class="imgBox">
+                <img src="img/Group 312.png" alt="">
+            </div>
+        </div>
+        <div class="sci">
+            <li><i class='bx bxl-github'></i></li>
+            <li><i class='bx bxl-dribbble'></i></li>
+            <li><i class='bx bxl-linkedin'></i></li>
+        </div>
+    </section>
+
+    <script>
+        let icon = document.querySelector('.bxs-moon');
+        let dark = document.querySelector('body');
+        icon.onclick = function(){
+            icon.classList.toggle('bxs-sun');
+            dark.classList.toggle('actived');
+        }
+    </script>
+</body>
+</html>
